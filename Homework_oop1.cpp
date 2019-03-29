@@ -33,11 +33,20 @@ public:
 	}
 };
 
+void printWatch()
+{
+	for (int i = 0; i < 10;i++)
+	{
+		Clock clock(5, 5, i);
+		cout << setfill('0') << setw(2) << clock.getHour() << ":" << setfill('0') << setw(2) << clock.getMin() << ":" << setfill('0') << setw(2) << clock.getSec()<<endl;
+
+	}
+	
+}
+
 int main()
 {
-	Clock clock(5, 15, 15);
-	cout << setfill('0') << setw(2) << clock.getHour() << ":" << setfill('0') << setw(2) << clock.getMin() << ":" << setfill('0') << setw(2) << clock.getSec();
-	
+	printWatch();
 	return 0;
 }
 
