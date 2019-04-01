@@ -60,7 +60,7 @@ void printWatch()
 		clock.setHour(15);
 		clock.setMin(56);
 		clock.setSec(i);
-		clock.setMin(59);
+		
 		cout << setfill('0') << setw(2) << clock.getHour() << ":" << setfill('0') << setw(2) << clock.getMin() << ":" << setfill('0') << setw(2) << clock.getSec()<<endl;
 
 	}
